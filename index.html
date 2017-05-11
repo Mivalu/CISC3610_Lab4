@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" href="style.css">
-	<script src="script.js"></script>
+	
 	<title>CISC 3610 Assignment 1</title>
 </head>
 <body>
@@ -18,10 +18,21 @@
 	</div>
 	<div class="content">
 		<div class="canvas">
-			<canvas id="drawingCanvas" width="600" height="400"></canvas>
+			<canvas id="drawingCanvas" width="800" height="600"></canvas>
 		</div>
-		<div class="textytext">Keyboard Storage Lab</div>
+		<div class="textytext">Keyboard Storage Lab<br>
+			<fieldset>
+				<legend>Presets</legend>
+				<input type="radio" name="fun" value="none" onclick="radioClick(this)" checked="checked">None</input><br>
+				<input type="radio" name="fun" onclick="radioClick(this)" value="green">Green</input><br>
+				<input type="radio" name="fun" onclick="radioClick(this)" value="black">Black</input><br>
+				<input type="radio" name="fun" onclick="radioClick(this)" value="pink">Pink</input><br>
+
+				<button id="reset">Reset</button>
+			</fieldset>
+		</div>
 	</div>
 	<div class="bottom">This is the bottom of the page. 2017.</div>
+	<script src="script.js"></script>
 </body>
 </html>

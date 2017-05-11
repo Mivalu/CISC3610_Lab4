@@ -1,3 +1,17 @@
+.photos {
+	width: 400px;
+	height: 400px;
+	text-align: center;
+}
+.photos img {
+	width: 100%;
+	height: auto;
+}
+
+html, body {
+	max-width: 100%;
+    overflow-x: hidden;
+}
 .header .content .bottom{
 	display: block;
 }
@@ -35,16 +49,23 @@
 	width: 300px;
 	height: 300px
 }
+.canvas {
+	flex: 0 0 450px;
+}
 .textytext {
 	font-family: Helvetica,Verdana;
 	font-size: 12pt;
-	clear: right;
-	float: right;
+	text-align: left;
+	width: 300px;
+	flex: 1;
+	border: 1px solid black;
 }
 .content {
 	position: absolute;
 	top: 100px;
+	left: 10px;
 	width: 80%;
+	display: flex;
 }
 .bottom {
 	font-family: Helvetica,Verdana;
@@ -54,10 +75,10 @@
 	bottom: 10px;
 	width: 100%;
 }
-.canvas {
-	clear: left;
-	float: left;
-}
+
 #drawingCanvas {
 	border: 1px solid black;
+}
+.rgb {
+	width: 20px;
 }
